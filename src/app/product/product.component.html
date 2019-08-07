@@ -1,0 +1,19 @@
+<p>product works!</p>
+<div *ngFor="let product of products">
+
+  <h3>
+    <a [title]="product.name + ' details'">
+      {{ product.name }}
+    </a>
+  </h3>
+</div>
+  <p>jump number is {{productID}}</p>
+<button (click)="addToCart(productID)">buy</button>
+
+<div *ngIf="proId">
+  <span>pro detail:</span>
+  <span>{{proId}}</span>
+  <a [routerLink]="['/cart']">go!!!!!!</a>
+</div>
+
+
